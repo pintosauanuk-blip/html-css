@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        .container{
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+        }
+        .hero{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        @media (max-width: 768px){
+            .hero{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando a Responsividade do Site</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cum earum modi quibusdam nesciunt inventore iste rem perspiciatis illo, alias unde distinctio eum odio voluptatem ut blanditiis obcaecati perferendis? Quibusdam?</p>
+    <picture>
+        <source media="(max-width:735px )" srcset="img/P.png">
+        <source media="(max-width:835px )" srcset="img/M.png">
+        <img src="img/G.png" alt="imagem grande" class="container"></picture>
+</body>
+</html>
