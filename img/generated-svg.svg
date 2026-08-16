@@ -1,0 +1,15 @@
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="curve" d="M 50 100 Q 150 30 250 100" fill="none" />
+  </defs>
+  <text fill="none" stroke="red" stroke-width="2" font-size="40" font-family="Arial" font-weight="bold">
+    <textPath href="#curve" startOffset="50%" text-anchor="middle">
+      DEFLIX
+    </textPath>
+  </text>
+  <text fill="red" font-size="40" font-family="Arial" font-weight="bold">
+    <textPath href="#curve" startOffset="50%" text-anchor="middle">
+      DEFLIX
+    </textPath>
+  </text>
+</svg>

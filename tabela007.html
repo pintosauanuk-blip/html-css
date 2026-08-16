@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 600px;
+        }
+        tr,td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        td{
+            text-align: center;
+        }
+        .text{
+            background-color: rgb(105, 105, 105);
+            color: white;
+            font-weight: bolder;
+        }
+        .duo{
+            text-align: left;
+        }
+        #position{
+            text-align: left;
+        }
+        #container{
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1> Lox</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, mollitia atque. Nam facere in odit cupiditate debitis tempore repellendus nostrum repellat, amet explicabo ratione minus vitae sit incidunt? Totam, accusamus!
+    Minima illum dolore, rem sit eveniet dignissimos nam repudiandae ratione illo est reiciendis cum aspernatur dicta unde nostrum temporibus ipsa iusto optio quis laudantium doloremque. Ab ea architecto tenetur inventore?
+    Magnam deleniti ut reprehenderit quo iste omnis laudantium quas inventore, iusto ratione consectetur, ducimus, magni delectus necessitatibus maiores non et aut labore fuga eaque dolore. Ea totam dicta optio sit?
+    Mollitia molestias blanditiis, autem possimus eligendi pariatur animi tempore eaque aliquam consequuntur eum consectetur earum nisi provident aut ducimus ea. Earum eaque voluptas itaque quas animi dolorum ullam accusamus quod.
+    Officia, cumque! Quasi magnam minima blanditiis, alias beatae, impedit unde nihil placeat, laboriosam voluptate neque expedita facere dolores ipsum mollitia sed ipsa ut officiis repudiandae quos modi natus. Odio, vero.</p>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" class="text">Área</th>
+                    <th rowspan="2" class="text">Disciplinas</th>
+                    <th colspan="2" class="text">Nota</th>
+                    <th rowspan="2" class="text">Média</th>
+                </tr>
+                <tr>
+                      <td class="text">Nota 1</td>
+                    <td class="text">Nota 2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4">Exatas</th>
+                    <td class="duo">Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="duo">Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="duo">Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="duo">Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text" id="position">Média de Exatas</td>
+                    <td class="text">0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td class="duo">História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="duo">Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                 <tr>
+                    <td colspan="4" class="text" id="position">Média de Humanas</td>
+                    <td class="text">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
