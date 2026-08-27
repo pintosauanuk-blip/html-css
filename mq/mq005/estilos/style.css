@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+@media all {
+    *{
+        margin: auto;
+        padding: 0;
+    }
+    li{
+        background-color: black;
+        display: inline-block;
+        padding: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    header{
+        background-color: rgba(169, 169, 169, 0.763);
+    }
+    header>h1{
+        text-align: center;
+        padding: 30px;
+    }
+    main{
+        width: 600px;
+        background-color: lightgray;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    article{
+        padding: 18px;
+    }
+}
