@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+/* 
+Para Celular: 576px
+Para Tablet: 576px to 768px
+Para Medium/Laptop: 768px to 992 ou 1024px
+Para Desktop: 992px to 1200px;
+Para Large Desktop: acima de 1200px 
+*/
+@media print{
+    body{
+        background-image: url(../img/back-print.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: url(../img/back-tablet.jpg);
+        
+    }
+    #tablet{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        background-image: url(../img/back-pc.jpg);
+        
+    }
+    #pc{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../img/back-tv.jpg)
+    }
+    #tv{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+
+}
