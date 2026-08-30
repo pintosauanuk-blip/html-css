@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queeries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
+
     <header>
         <h1>Meu site</h1>
         <span id="burger" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
@@ -40,6 +41,15 @@
                 item.style.display = 'block'
             }
             
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                item.style.display = 'block'
+            }
+            else {
+                item.style.display = 'none'
+            }
         }
     </script>
 </body>
