@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible Boxel model</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: brown;
+            flex-direction: column;
+            
+            
+        }
+        .item{
+           background-color: blue; 
+           border: 2px solid darkgray;
+           color: white;
+           text-align: center;
+           padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>
+<!-- Anotaçoes Flex Box:
+ flex-diretion: row (da esquerda para direita, padrão); row-reverse (da direita para esquerda); column (de cima para baixo); 
+ column-reverse (de baixo para cima).
+ 
+ Eixos(axis): main-axis (eixo principal ou eixo de X com um main-start e main-end) ; Cross-axis(eixo transversal, ou eixo de Y, com cross-start e cross-end )
+
+ Quando usamos o flex-diretion: column, o eixo de X, ou main-axis vai de cima para baixo (seguindo sempre o conteúdo) e o cross-axis da esquerda para a direita.
+ Quando usamos o flex-diretion: column-reverse, o eixo de X, ou main-axis vai de baixo para cima (seguindo sempre o conteúdo) e o cross-axis da esquerda para a direita.
+
+ 
+-->

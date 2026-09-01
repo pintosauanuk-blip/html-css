@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible Boxel model</title>
+    <style>
+        .container{
+            display: flex;
+            height: 200px;
+            background-color: brown;
+            border: 2px solid darkgray;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .item{
+           background-color: blue; 
+           border: 2px solid darkgray;
+           color: white;
+           text-align: center;
+           padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+    </div>
+</body>
+</html>
+<!--Anotações Flexbox:
+Justify-content: faz o alinhamento em relação ao main-axis.
+ao atribuir uma caracteristica ao justify-content, como flex-start, significa que o primeiro conteúdo dentro do container estará alinhado a parte inicial do main-axis.
+
+align-items: faz o alinhamento em relação ao cross-axis.
+Ao atribuir uma caracteristica ao align items, como flex-start, significa que primeiro conteúdo dentro do container estará alinhado a parte inicial do cross-axis, ou eixo de y. (O valor padrão do align-items é o streech)
+-->
