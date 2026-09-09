@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible Boxel model</title>
+    <style>
+        .container{
+            display: flex;
+            height: 400px;
+            background-color: brown;
+            border: 2px solid darkgray;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            
+            
+        }
+        .item{
+           background-color: blue; 
+           border: 2px solid darkgray;
+           color: white;
+           text-align: center;
+           padding: 10px;
+           align-items: flex-start;
+           
+
+        }
+        #i1{
+            
+           align-self: flex-end; 
+        }
+        #i2{
+            align-self: flex-start;
+        }
+        #i3{
+            align-self: flex-end;
+        }
+        #i4{
+            align-self: center;
+        }
+        #i5{
+            align-self:stretch;
+        }
+        #i6{
+            align-self: self-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">Exemplo de Bloco A</div>
+        <div class="item" id="i2">Exemplo de Bloco B</div>
+        <div class="item" id="i3">Exemplo de Bloco C</div>
+        <div class="item" id="i4">Exemplo de Bloco D</div>
+        <div class="item" id="i5">Exemplo de Bloco E</div>
+        <div class="item" id="i6">Exemplo de Bloco F</div>
+    </div>
+</body>
+</html>
