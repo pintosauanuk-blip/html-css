@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible Boxel model</title>
+    <style>
+        .container{
+            display: flex;
+            height: 120px;
+            background-color: brown;
+            flex-flow: row nowrap;
+            
+            
+        }
+        .item{
+           background-color: blue; 
+           border: 2px solid darkgray;
+           color: white;
+           text-align: center;
+           padding: 10px;
+           flex-basis: 150px;
+           flex-shrink: 1;
+           flex-grow: 0;   
+        }
+        #let22{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #let23{
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+        #let32{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        #let31{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #let33{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div> <br> <br>
+    <div class="container">
+        <div class="item" id="let21">A</div>
+        <div class="item" id="let22">B</div>
+        <div class="item" id="let23">C</div>
+    </div> <br> <br>
+    <div class="container">
+        <div class="item" id="let31">A</div>
+        <div class="item" id="let32">B</div>
+        <div class="item" id="let33">C</div>
+    </div>
+</body>
+</html
